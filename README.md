@@ -1,4 +1,3 @@
-pieter.io
-=========
+#Public [Pieter.io](http://Pieter.io/) website
 
-Public pieter.io website
+My personal vcard type website that's hosted with github pages.
