@@ -1,0 +1,194 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Pieter Vanderwerff</title>
+	<meta name="description" content="I’m Pieter Vanderwerff an interface developer from Wellington, NZ who works for Heyday! Digital. I currently specialise in creating javascript applications, have an eye for design and a background in 3D visualisation">
+
+	<meta name="viewport" content="width=device-width">
+
+	<script>window.Modernizr=function(a,b,c){function d(a){q.cssText=a}function e(a,b){return d(prefixes.join(a+";")+(b||""))}function f(a,b){return typeof a===b}function g(a,b){return!!~(""+a).indexOf(b)}function h(a,b){for(var d in a)if(q[a[d]]!==c)return b=="pfx"?a[d]:!0;return!1}function i(a,b,d){for(var e in a){var g=b[a[e]];if(g!==c)return d===!1?a[e]:f(g,"function")?g.bind(d||b):g}return!1}function j(a,b,c){var d=a.charAt(0).toUpperCase()+a.substr(1),e=(a+" "+u.join(d+" ")+d).split(" ");return f(b,"string")||f(b,"undefined")?h(e,b):(e=(a+" "+v.join(d+" ")+d).split(" "),i(e,b,c))}var k="2.5.3",l={},m=!0,n=b.documentElement,o="modernizr",p=b.createElement(o),q=p.style,r,s={}.toString,t="Webkit Moz O ms",u=t.split(" "),v=t.toLowerCase().split(" "),w={},x={},y={},z=[],A=z.slice,B,C={}.hasOwnProperty,D;!f(C,"undefined")&&!f(C.call,"undefined")?D=function(a,b){return C.call(a,b)}:D=function(a,b){return b in a&&f(a.constructor.prototype[b],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(a){var b=this;if(typeof b!="function")throw new TypeError;var c=A.call(arguments,1),d=function(){if(this instanceof d){var e=function(){};e.prototype=b.prototype;var f=new e,g=b.apply(f,c.concat(A.call(arguments)));return Object(g)===g?g:f}return b.apply(a,c.concat(A.call(arguments)))};return d}),w.rgba=function(){return d("background-color:rgba(150,255,150,.5)"),g(q.backgroundColor,"rgba")},w.textshadow=function(){return b.createElement("div").style.textShadow===""},w.csstransitions=function(){return j("transition")};for(var E in w)D(w,E)&&(B=E.toLowerCase(),l[B]=w[E](),z.push((l[B]?"":"no-")+B));return d(""),p=r=null,function(a,b){function c(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function d(){var a=k.elements;return typeof a=="string"?a.split(" "):a}function e(a){var b={},c=a.createElement,e=a.createDocumentFragment,f=e();a.createElement=function(a){var d=(b[a]||(b[a]=c(a))).cloneNode();return k.shivMethods&&d.canHaveChildren&&!h.test(a)?f.appendChild(d):d},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+d().join().replace(/\w+/g,function(a){return b[a]=c(a),f.createElement(a),'c("'+a+'")'})+");return n}")(k,f)}function f(a){var b;return a.documentShived?a:(k.shivCSS&&!i&&(b=!!c(a,"article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}audio{display:none}canvas,video{display:inline-block;*display:inline;*zoom:1}[hidden]{display:none}audio[controls]{display:inline-block;*display:inline;*zoom:1}mark{background:#FF0;color:#000}")),j||(b=!e(a)),b&&(a.documentShived=b),a)}var g=a.html5||{},h=/^<|^(?:button|form|map|select|textarea)$/i,i,j;(function(){var a=b.createElement("a");a.innerHTML="<xyz></xyz>",i="hidden"in a,j=a.childNodes.length==1||function(){try{b.createElement("a")}catch(a){return!0}var c=b.createDocumentFragment();return typeof c.cloneNode=="undefined"||typeof c.createDocumentFragment=="undefined"||typeof c.createElement=="undefined"}()})();var k={elements:g.elements||"abbr article aside audio bdi canvas data datalist details figcaption figure footer header hgroup mark meter nav output progress section summary time video",shivCSS:g.shivCSS!==!1,shivMethods:g.shivMethods!==!1,type:"default",shivDocument:f};a.html5=k,f(b)}(this,b),l._version=k,l._domPrefixes=v,l._cssomPrefixes=u,l.testProp=function(a){return h([a])},l.testAllProps=j,n.className=n.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(m?" js "+z.join(" "):""),l}(this,this.document)</script>
+
+	<link href='http://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>
+	<style>/* Variables
+---------------------------------------------------- */
+/* Base
+---------------------------------------------------- */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+::-moz-selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 100%;
+  font-family: Cambria, Georgia, serif;
+  color: #2b1e0d;
+  background-color: #f8f7f1;
+}
+body {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4;
+  background-color: #f8f7f1;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: black;
+  padding: 0.2em 0;
+}
+/* Typography
+---------------------------------------------------- */
+a {
+  color: #00e;
+  text-decoration: none;
+}
+a:visited {
+  color: #551a8b;
+}
+a:hover {
+  color: #06e;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+ul,
+ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: 'Cuprum', Arial, sans-serif;
+}
+/* Header
+---------------------------------------------------- */
+header {
+  height: 100px;
+  position: relative;
+  width: 480px;
+  margin: 0 auto;
+}
+header:before {
+  content: '';
+  display: block;
+  width: 355px;
+  height: 72px;
+  position: absolute;
+  top: 0;
+  left: -35px;
+  background: transparent url(images/bg_header.jpg) no-repeat 0 0;
+}
+header a {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+header h1 {
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.75);
+  font-size: 2.2em;
+  line-height: 1em;
+  color: #463018;
+  text-transform: uppercase;
+}
+header h2 {
+  font-size: 1em;
+  color: #463018;
+  text-align: right;
+  margin-top: -4px;
+}
+header .home {
+  position: absolute;
+  right: -50px;
+  top: 0;
+  opacity: 0;
+  color: #d8d3c0;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+}
+header a:hover .home {
+  opacity: 1;
+}
+/* Main
+---------------------------------------------------- */
+section {
+  position: relative;
+  width: 480px;
+  margin: 0 auto;
+  padding: 10px;
+}
+section .intro {
+  font-size: 1.2em;
+}
+/* Icons
+---------------------------------------------------- */
+.icon_house {
+  padding-left: 15px;
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAsUlEQVR42o3QsQpBYRjG8ZNyCSaZlcV9mGRwEeqkREpuQFldgJDJiZGJsxotDBKT1WZ7/Y/OqafOd+oMv/p63vcZ3s8zs5Tr5VhDFQVUUEpmruUytpijgRBTLehyHWdY7A3DIVUgbOIFc9ibFgh8fGEZPhj9CzwmsJxmniN84oQQD5iKCi3cJByjGOtLfkc7uWEhg558REfyjR69lMFACn5WYZWjEGhhLYOhFLqS76LsB4xvwkeYgb4hAAAAAElFTkSuQmCC) no-repeat 0 0;
+}
+</style>
+
+</head>
+<body>
+	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+	<header>
+
+		<a href="/" title="Home">
+			<h1>Pieter Vanderwerff</h1>
+			<h2 class="tagline">Javascript and Stuff..</h2>
+			<span class="home icon_house">Home</span>
+		</a>
+
+	</header>
+	<section role="main">
+		<p class="intro">Hi! I’m an interface developer from Wellington, NZ who works for <a href="#" title="Heyday">Heyday! Digital</a>. I currently specialise in creating javascript applications, have an eye for design and a background in 3D visualisation.</p>
+
+
+	</section>
+	<footer>
+
+	</footer>
+
+</body>
+</html>
