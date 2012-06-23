@@ -262,7 +262,7 @@ header {
 section {
 	position: relative;
 	width: 480px;
-	margin: 0 auto 50px;
+	margin: 0 auto 40px;
 	padding: 10px;
 
 	.intro {
@@ -282,6 +282,32 @@ section {
 			clear: both;
 			margin-bottom: 3.5em;
 			position: relative;
+			opacity: 0;
+			top: -15px;
+
+			.ready & {
+				opacity: 1;
+				top: 0px;
+			}
+
+			@properties: all;
+			@duration: 0.7s;
+			@easing: ease-out;
+			@delay: 0.7s;
+			@delay-space: 0.45s;
+
+			&:nth-child( 1 ) {
+				.transition( @properties, @duration, @easing, @delay );
+			}
+			&:nth-child( 2 ) {
+				.transition( @properties, @duration, @easing, @delay + ( @delay-space * 1 ) );
+			}
+			&:nth-child( 3 ) {
+				.transition( @properties, @duration, @easing, @delay + ( @delay-space * 2 ) );
+			}
+			&:nth-child( 4 ) {
+				.transition( @properties, @duration, @easing, @delay + ( @delay-space * 3 ) );
+			}
 
 			@media (max-width: @size_mob) {
 				margin-bottom: 2.5em;
