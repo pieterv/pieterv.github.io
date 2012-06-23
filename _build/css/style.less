@@ -12,6 +12,8 @@
 @font_sansserif: 'Cuprum', Arial, sans-serif;
 @font_serif: Cambria, Georgia, serif;
 
+@size_mob: 768px;
+
 
 /* Mixins
 ---------------------------------------------------- */
@@ -197,6 +199,11 @@ header {
 	width: 480px;
 	margin: 0 auto 1.5em;
 
+	@media (max-width: @size_mob) {
+		height: 70px;
+		margin-bottom: 5px;
+	}
+
 	&:before {
 		content: '';
 		display: block;
@@ -212,6 +219,10 @@ header {
 		position:absolute;
 		left:0;
 		bottom:0;
+	
+		@media (max-width: @size_mob) {
+			left: 10px;
+		}
 	}
 
 	h1 {
@@ -244,7 +255,6 @@ header {
 	a:hover .home {
 		opacity:1;
 	}
-
 }
 
 /* Main
@@ -252,12 +262,16 @@ header {
 section {
 	position: relative;
 	width: 480px;
-	margin: 0 auto;
+	margin: 0 auto 50px;
 	padding: 10px;
 
 	.intro {
 		font-size: 1.2em;
 		margin-bottom: 2.5em;
+
+		@media (max-width: @size_mob) {
+			margin-bottom: 30px;
+		}
 	}
 
 	.contacts {
@@ -269,8 +283,15 @@ section {
 			margin-bottom: 3.5em;
 			position: relative;
 
+			@media (max-width: @size_mob) {
+				margin-bottom: 2.5em;
+			}
+
 			&.small {
 				margin-bottom: 1.5em;
+				@media (max-width: @size_mob) {
+					margin-bottom: 1.0em;
+				}
 
 				.button {
 					position: absolute;
@@ -286,6 +307,11 @@ section {
 			float: left;
 			margin-right: 1em;
 			margin-top: -8px;
+			.transition( border, 0.3s, ease-in );
+		}
+
+		a:hover img {
+			border: 10px solid lighten( #06e, 48% );
 		}
 
 		h3 {
