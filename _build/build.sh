@@ -38,7 +38,14 @@ function getHeadJs( cb ) {
 function getCss( cb ) {
 	var less_file = fs.readFileSync( path.dev + files.less, 'utf8' );
 
-	less.render( less_file, cb );
+	var parser = new( less.Parser )( {
+		paths: [ '.' ],
+		filename: path.dev + files.less
+	} );
+
+	parser.parse( less_file, function ( e, tree ) {
+		cb( e, tree.toCSS( { compress: true } ) );
+	} );
 }
 
 function generate( head_js, css ) {
