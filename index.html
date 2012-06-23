@@ -11,8 +11,6 @@
 
 	<meta name="viewport" content="width=device-width">
 
-	<script>window.Modernizr=function(a,b,c){function d(a){q.cssText=a}function e(a,b){return d(prefixes.join(a+";")+(b||""))}function f(a,b){return typeof a===b}function g(a,b){return!!~(""+a).indexOf(b)}function h(a,b){for(var d in a)if(q[a[d]]!==c)return b=="pfx"?a[d]:!0;return!1}function i(a,b,d){for(var e in a){var g=b[a[e]];if(g!==c)return d===!1?a[e]:f(g,"function")?g.bind(d||b):g}return!1}function j(a,b,c){var d=a.charAt(0).toUpperCase()+a.substr(1),e=(a+" "+u.join(d+" ")+d).split(" ");return f(b,"string")||f(b,"undefined")?h(e,b):(e=(a+" "+v.join(d+" ")+d).split(" "),i(e,b,c))}var k="2.5.3",l={},m=!0,n=b.documentElement,o="modernizr",p=b.createElement(o),q=p.style,r,s={}.toString,t="Webkit Moz O ms",u=t.split(" "),v=t.toLowerCase().split(" "),w={},x={},y={},z=[],A=z.slice,B,C={}.hasOwnProperty,D;!f(C,"undefined")&&!f(C.call,"undefined")?D=function(a,b){return C.call(a,b)}:D=function(a,b){return b in a&&f(a.constructor.prototype[b],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(a){var b=this;if(typeof b!="function")throw new TypeError;var c=A.call(arguments,1),d=function(){if(this instanceof d){var e=function(){};e.prototype=b.prototype;var f=new e,g=b.apply(f,c.concat(A.call(arguments)));return Object(g)===g?g:f}return b.apply(a,c.concat(A.call(arguments)))};return d}),w.rgba=function(){return d("background-color:rgba(150,255,150,.5)"),g(q.backgroundColor,"rgba")},w.textshadow=function(){return b.createElement("div").style.textShadow===""},w.csstransitions=function(){return j("transition")};for(var E in w)D(w,E)&&(B=E.toLowerCase(),l[B]=w[E](),z.push((l[B]?"":"no-")+B));return d(""),p=r=null,function(a,b){function c(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function d(){var a=k.elements;return typeof a=="string"?a.split(" "):a}function e(a){var b={},c=a.createElement,e=a.createDocumentFragment,f=e();a.createElement=function(a){var d=(b[a]||(b[a]=c(a))).cloneNode();return k.shivMethods&&d.canHaveChildren&&!h.test(a)?f.appendChild(d):d},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+d().join().replace(/\w+/g,function(a){return b[a]=c(a),f.createElement(a),'c("'+a+'")'})+");return n}")(k,f)}function f(a){var b;return a.documentShived?a:(k.shivCSS&&!i&&(b=!!c(a,"article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}audio{display:none}canvas,video{display:inline-block;*display:inline;*zoom:1}[hidden]{display:none}audio[controls]{display:inline-block;*display:inline;*zoom:1}mark{background:#FF0;color:#000}")),j||(b=!e(a)),b&&(a.documentShived=b),a)}var g=a.html5||{},h=/^<|^(?:button|form|map|select|textarea)$/i,i,j;(function(){var a=b.createElement("a");a.innerHTML="<xyz></xyz>",i="hidden"in a,j=a.childNodes.length==1||function(){try{b.createElement("a")}catch(a){return!0}var c=b.createDocumentFragment();return typeof c.cloneNode=="undefined"||typeof c.createDocumentFragment=="undefined"||typeof c.createElement=="undefined"}()})();var k={elements:g.elements||"abbr article aside audio bdi canvas data datalist details figcaption figure footer header hgroup mark meter nav output progress section summary time video",shivCSS:g.shivCSS!==!1,shivMethods:g.shivMethods!==!1,type:"default",shivDocument:f};a.html5=k,f(b)}(this,b),l._version=k,l._domPrefixes=v,l._cssomPrefixes=u,l.testProp=function(a){return h([a])},l.testAllProps=j,n.className=n.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(m?" js "+z.join(" "):""),l}(this,this.document)</script>
-
 	<link href='http://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>
 	<style>*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block;}
@@ -35,8 +33,13 @@ header h1{text-shadow:-1px -1px 1px rgba(255, 255, 255, 0.75);font-size:2.2em;li
 header h2{font-size:1em;color:#463018;text-align:right;margin-top:-4px;}
 header .home{position:absolute;left:100%;top:0;opacity:0;color:#d8d3c0;text-transform:uppercase;font-size:12px;line-height:16px;padding-left:2em;background-position:9px 0;-webkit-transition:opacity 0.2s ease-in;-moz-transition:opacity 0.2s ease-in;-ms-transition:opacity 0.2s ease-in;-o-transition:opacity 0.2s ease-in;transition:opacity 0.2s ease-in;}
 header a:hover .home{opacity:1;}
-section{position:relative;width:480px;margin:0 auto 50px;padding:10px;}section .intro{font-size:1.2em;margin-bottom:2.5em;}@media (max-width:768px){section .intro{margin-bottom:30px;}}
-section .contacts{list-style:none;margin:0;}section .contacts li{clear:both;margin-bottom:3.5em;position:relative;}@media (max-width:768px){section .contacts li{margin-bottom:2.5em;}}section .contacts li.small{margin-bottom:1.5em;}@media (max-width:768px){section .contacts li.small{margin-bottom:1.0em;}}section .contacts li.small .button{position:absolute;left:157px;top:4px;}
+section{position:relative;width:480px;margin:0 auto 40px;padding:10px;}section .intro{font-size:1.2em;margin-bottom:2.5em;}@media (max-width:768px){section .intro{margin-bottom:30px;}}
+section .contacts{list-style:none;margin:0;}section .contacts li{clear:both;margin-bottom:3.5em;position:relative;opacity:0;top:-15px;}.ready section .contacts li{opacity:1;top:0px;}
+section .contacts li:nth-child( 1 ){-webkit-transition:all 0.7s ease-out 0.7s;-moz-transition:all 0.7s ease-out 0.7s;-ms-transition:all 0.7s ease-out 0.7s;-o-transition:all 0.7s ease-out 0.7s;transition:all 0.7s ease-out 0.7s;}
+section .contacts li:nth-child( 2 ){-webkit-transition:all 0.7s ease-out 1.15s;-moz-transition:all 0.7s ease-out 1.15s;-ms-transition:all 0.7s ease-out 1.15s;-o-transition:all 0.7s ease-out 1.15s;transition:all 0.7s ease-out 1.15s;}
+section .contacts li:nth-child( 3 ){-webkit-transition:all 0.7s ease-out 1.6s;-moz-transition:all 0.7s ease-out 1.6s;-ms-transition:all 0.7s ease-out 1.6s;-o-transition:all 0.7s ease-out 1.6s;transition:all 0.7s ease-out 1.6s;}
+section .contacts li:nth-child( 4 ){-webkit-transition:all 0.7s ease-out 2.05s;-moz-transition:all 0.7s ease-out 2.05s;-ms-transition:all 0.7s ease-out 2.05s;-o-transition:all 0.7s ease-out 2.05s;transition:all 0.7s ease-out 2.05s;}
+@media (max-width:768px){section .contacts li{margin-bottom:2.5em;}}section .contacts li.small{margin-bottom:1.5em;}@media (max-width:768px){section .contacts li.small{margin-bottom:1.0em;}}section .contacts li.small .button{position:absolute;left:157px;top:4px;}
 section .contacts img{border:10px solid #fff;-webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.11);-moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.11);box-shadow:0 0 5px rgba(0, 0, 0, 0.11);float:left;margin-right:1em;margin-top:-8px;-webkit-transition:border 0.3s ease-in;-moz-transition:border 0.3s ease-in;-ms-transition:border 0.3s ease-in;-o-transition:border 0.3s ease-in;transition:border 0.3s ease-in;}
 section .contacts a:hover img{border:10px solid #e4efff;}
 section .contacts h3{font-size:24px;float:left;padding-right:0.3em;}
@@ -62,7 +65,7 @@ section .contacts .button{width:150px;}
 	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 	<header>
 
-		<a href="/" title="I'm afraid you are home">
+		<a href="/" title="I'm afraid you are already home">
 			<h1>Pieter Vanderwerff</h1>
 			<h2 class="tagline">JavaScript and Stuff..</h2>
 			<span class="home icon_house">Home</span>
@@ -93,7 +96,7 @@ section .contacts .button{width:150px;}
 			<li class="small">
 					<h3>Twitter</h3>
 					<p class="more"><a href="https://twitter.com/#!/_pieterv" title="Me but on twitter">@_pieterv</a></p>
-					<div class="button button_blue button_right"><a href="https://twitter.com/#!/_pieterv" class="button_inner" title="Seriously, because there are not many">Find my tweets</a></div>
+					<div class="button button_blue button_right"><a href="https://twitter.com/#!/_pieterv" class="button_inner" title="Seriously, because there aren't many">Find my tweets</a></div>
 			</li>
 			<li class="small">
 					<h3>Linkedin</h3>
@@ -103,6 +106,10 @@ section .contacts .button{width:150px;}
 		</ul>
 
 	</section>
+
+	<script>
+		( document.documentElement ).className += ' ready';
+	</script>
 
 </body>
 </html>
